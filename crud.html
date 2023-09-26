@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    
+        <h1>Book Management</h1>
+        <button id="add-button">Add Book</button>
+        <form id="book-form" class="hidden">
+            <input type="hidden" id="book-id">
+            <input type="text" id="book-title" placeholder="Book Title" required>
+            <input type="number" id="book-price" placeholder="Book Price" required>
+            <button type="submit" id="save-button" class="add">Add</button>
+            <button type="button" id="cancel-button" class="cancel">Cancel</button>
+        </form>
+        <table >
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+                <!-- Books will be displayed here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="crud.js"></script>
+</body>
+</html>
